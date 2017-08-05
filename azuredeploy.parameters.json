@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterName": {
+            "value": "makingstuff1"
+        },
+        "clusterLocation": {
+            "value": "southindia"
+        },
+        "computeLocation": {
+            "value": "southindia"
+        },
+        "adminUserName": {
+            "value": "makingstuff"
+        },
+        "adminPassword": {
+            "value": "Password@123"
+        },
+        "nicName": {
+            "value": "NIC-makingstuff"
+        },
+        "publicIPAddressName": {
+            "value": "makingstuff-PubIP"
+        },
+        "dnsName": {
+            "value": "makingstuff"
+        },
+        "virtualNetworkName": {
+            "value": "VNet-makingstuff"
+        },
+        "lbName": {
+            "value": "LB-makingstuff"
+        },
+        "lbIPName": {
+            "value": "LBIP-makingstuff"
+        },
+        "supportLogStorageAccountName": {
+            "value": "sflogsmakingstuff5714"
+        },
+      "sourceVaultValue": {
+        "value": "/subscriptions/38e1b8c4xxxx-4dd5-axxxxf4fad/resourceGroups/makingstuffKeyVaultGroup/providers/Microsoft.KeyVault/vaults/makingstuffKeyVault"
+      },
+      "certificateUrlValue": {
+        "value": "https://makingstuffkeyvault.vault.azure.net:443/secrets/makingstuff0001/19eafxxxxx3342c6ad09323550cdcbc0"
+      },
+      "certificateThumbprint": {
+        "value": "C762512EF919xxxxxB79425C121FCB29503C04"
+      },
+        "vmImageSku": {
+            "value": "2012-R2-Datacenter"
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        }
+    }
+}
